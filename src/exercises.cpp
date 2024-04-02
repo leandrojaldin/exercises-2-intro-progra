@@ -6,7 +6,7 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HER
-  int indice = 0;
+    int indice = 0;
 
     // Iterar sobre cada carácter en la cadena
     for (int i = 0; i < s1.length(); ++i) {
