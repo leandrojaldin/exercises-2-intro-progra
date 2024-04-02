@@ -10,7 +10,7 @@ void exercise_1(string s1) {
     if (str[i] ==' '){
       cout << i << endl;
     }
-  }
+  } 
   cout << str.size() << endl;
 }
 
