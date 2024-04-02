@@ -5,8 +5,8 @@
 using namespace std;
 
 void exercise_1(string s1) {
-  // TODO: YOUR CODE HERE
-     int indice = 0;
+  // TODO: YOUR CODE HER
+  int indice = 0;
 
     // Iterar sobre cada carácter en la cadena
     for (int i = 0; i < s1.length(); ++i) {
@@ -17,8 +17,7 @@ void exercise_1(string s1) {
             // Actualizar el índice al siguiente carácter después del espacio
             indice = i + 1;
         }
-   
-
+    }
 }
 
 void exercise_2(string s1) {
