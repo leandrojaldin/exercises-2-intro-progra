@@ -6,12 +6,18 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-    for (int i = 0; i <= s1.size(); ++i) {
-         if(s1[i] == ' '){
-             cout << i << endl;
-          }
-    }
-    cout << s1.size() << endl; 
+     int indice = 0;
+
+    // Iterar sobre cada carácter en la cadena
+    for (int i = 0; i < s1.length(); ++i) {
+        // Si el carácter es un espacio o es el último carácter de la cadena
+        if (s1[i] == ' ' || i == s1.length() - 1) {
+            // Imprimir el índice después del último carácter de la palabra actual
+            cout << indice << endl;
+            // Actualizar el índice al siguiente carácter después del espacio
+            indice = i + 1;
+        }
+   
 
 }
 
