@@ -118,31 +118,33 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-     int day = 1; // Variable para rastrear el día actual del mes
-    // Iteramos sobre las semanas
-    while (day <= k) {
-        // Iteramos sobre los días de la semana
-        for (int i = 1; i <= 7; ++i) {
-            if (day <= k) {
-                // Imprimimos el día si corresponde
-                if (i == 1) {
-                    // Agregamos espacios para alinear correctamente el primer día
-                    for (int j = 1; j < n; ++j) {
-                        cout << "   ";
-                    }
-                }
-                // Imprimimos el número de día con formato
-                cout << (day < 10 ? " " : "") << day;
-                // Añadimos espacios entre los días
-                if (i < 7 && day != k) {
-                    cout << " ";
-                }
-                day++;
+    int days[7][7] = {0};
+    
+    // Calculamos el número de filas necesarias
+    int rows = (k + n - 1) / 7 + 1;
+    
+    // Llenamos el array con los números del mes
+    int day = 1;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < 7 && day <= k; ++j) {
+            if (i == 0 && j < n - 1) {
+                days[i][j] = -1; // Espacios vacíos antes del primer día
+            } else {
+                days[i][j] = day++; // Llenamos el array con los días del mes
             }
         }
-        cout << endl;
     }
-}
+    
+    // Imprimimos el calendario
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < 7 && days[i][j] > 0; ++j) {
+            if (days[i][j] < 10) {
+                cout << " ";
+            }
+            cout << days[i][j] << " ";
+        }
+        cout << endl;
+    }  
 }
 
 int exercise_6(int n) {
