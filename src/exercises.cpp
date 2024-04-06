@@ -118,33 +118,25 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-    int days[7][7] = {0};
+    int rows = (k + n - 2) / 7 + 1;
     
-    // Calculamos el número de filas necesarias
-    int rows = (k + n - 1) / 7 + 1;
-    
-    // Llenamos el array con los números del mes
+    // Imprimimos el calendario
     int day = 1;
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < 7 && day <= k; ++j) {
             if (i == 0 && j < n - 1) {
-                days[i][j] = -1; // Espacios vacíos antes del primer día
+                cout << "   "; // Espacios para los días anteriores al primer día
             } else {
-                days[i][j] = day++; // Llenamos el array con los días del mes
+                cout.width(2);
+                cout << day++; // Imprimimos el día actual
             }
-        }
-    }
-    
-    // Imprimimos el calendario
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < 7 && days[i][j] > 0; ++j) {
-            if (days[i][j] < 10) {
+            if (day <= k) {
                 cout << " ";
             }
-            cout << days[i][j] << " ";
         }
         cout << endl;
-    }  
+    }
+}  
 }
 
 int exercise_6(int n) {
