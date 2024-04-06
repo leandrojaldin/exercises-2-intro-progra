@@ -37,7 +37,8 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  
+int cakeCount = 0;
+
     string numberStr = "";
     for (char c : s1) {
         if (c == ' ') {
@@ -47,11 +48,17 @@ void exercise_3(string s1) {
                 cakeCount++;
 
                 if (cakeCount >= 10) {
-                    break; 
-                } 
-                 } else {
+                    break; // Detenemos el ciclo si se han realizado más de 10 visitas
+                }
+            } else {
                 cout << "No cake :(" << endl;
-                break; 
+                break; // Detenemos el ciclo si no hay más pastel
+            }
+            numberStr = ""; // Reiniciamos numberStr para la próxima iteración
+        } else {
+            numberStr += c;
+        }
+    }
 }
 
 void exercise_4(int n) {
