@@ -118,7 +118,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-      int day = 1; // Inicializamos el contador de días
+    int day = 1; // Inicializamos el contador de días
     for (int i = 1; i <= 6; ++i) { // Iteramos sobre las filas
         for (int j = 1; j <= 7; ++j) { // Iteramos sobre las columnas
             if (i == 1 && j < n) {
@@ -144,11 +144,9 @@ void exercise_5(int n, int k) {
             // Si ya hemos impreso todos los días, salimos del bucle
             break;
         }
-    } 
+    }
 }
   
-
-
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
