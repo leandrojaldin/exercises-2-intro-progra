@@ -94,7 +94,27 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
+      if (n < 0) {
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+        return;
+    }
+
+    // Verificamos si el número es demasiado grande
+    if (n > 14) {
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+        return;
+    }
+
+    // Calculamos el factorial
+    int factorial = 1;
+    for (int i = 2; i <= n; ++i) {
+        factorial *= i;
+    }
+
+    // Mostramos el resultado
+    cout << factorial << endl;
 }
+
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
