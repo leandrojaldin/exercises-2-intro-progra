@@ -47,8 +47,11 @@ void exercise_3(string s1) {
                 cakeCount++;
 
                 if (cakeCount >= 10) {
-                    break; // Detenemos el ciclo si se han realizado más de 10 visitas
-                }
+                    break; 
+                } 
+                 } else {
+                cout << "No cake :(" << endl;
+                break; 
 }
 
 void exercise_4(int n) {
