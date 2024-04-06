@@ -144,7 +144,7 @@ void exercise_5(int n, int k) {
             // Si ya hemos impreso todos los días, salimos del bucle
             break;
         }
-    }
+    } 
 }
   
 
