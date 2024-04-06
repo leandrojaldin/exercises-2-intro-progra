@@ -135,7 +135,13 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+    double suma = 0;
+    for (int i = 1; i <= n; ++i) {
+        suma += 1.0 / i;
+    }
+    cout << suma << endl;
 }
+
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
