@@ -116,33 +116,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    int day = 1; // Inicializamos el contador de días
-    for (int i = 1; i <= 6; ++i) { // Iteramos sobre las filas
-        for (int j = 1; j <= 7; ++j) { // Iteramos sobre las columnas
-            if (i == 1 && j < n) {
-                // Imprimimos espacios para los días antes del primer día
-                cout << setw(3) << " ";
-            } else {
-                if (day <= k) {
-                    // Imprimimos el número del día
-                    cout << setw(3) << day;
-                    ++day;
-                } else {
-                    // Imprimimos espacios para los días después del último día
-                    cout << setw(3) << " ";
-                }
-            }
-            if (j < 7) {
-                // Imprimimos un espacio adicional entre los números
-                cout << " ";
-            }
-        }
-        cout << endl; // Saltamos a la siguiente línea después de cada fila
-        if (day > k) {
-            // Si ya hemos impreso todos los días, salimos del bucle
-            break;
-        }
-    }
+   //HERE YOUR CODE
 }  
 
 int exercise_6(int n) {
