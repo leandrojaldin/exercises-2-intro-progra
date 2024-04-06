@@ -23,14 +23,14 @@ void exercise_2(string s1) {
             word += s1[i];
         } else {
             if (word != "") {
-                cout << "[" << word << "]" << endl; // Agregamos endl aquí
+                cout << "[" << word << "]" << endl; 
                 word = "";
             }
         }
     }
 
     if (word != "") {
-        cout << "[" << word << "]" << endl; // Agregamos endl aquí también
+        cout << "[" << word << "]" << endl; 
     }
 }
 
@@ -40,14 +40,14 @@ void exercise_3(string s1) {
     int cakeCount = 0;
 
     string numberStr = "";
-    bool foundSpace = false; // Variable para rastrear si hemos encontrado un espacio en blanco
+    bool foundSpace = false; 
 
     for (char c : s1) {
         if (c == ' ') {
-            foundSpace = true; // Marcamos que hemos encontrado un espacio en blanco
+            foundSpace = true; 
             if (!numberStr.empty()) {
                 int cake = 0;
-                // Convertimos la cadena en un número entero
+                // 
                 for (char digit : numberStr) {
                     cake = cake * 10 + (digit - '0');
                 }
@@ -56,27 +56,27 @@ void exercise_3(string s1) {
                     cakeCount++;
 
                     if (cakeCount >= 10) {
-                        return; // Salimos del ciclo si se han realizado más de 10 visitas
+                        return; 
                     }
                 } else {
                     cout << "No cake :(" << endl;
-                    return; // Salimos del ciclo si no hay más pastel
+                    return; 
                 }
             }
-            numberStr = ""; // Reiniciamos numberStr para la próxima iteración
+            numberStr = ""; 
         } else {
             if (foundSpace) {
-                // Si encontramos un espacio en blanco previamente, reiniciamos foundSpace
+                
                 foundSpace = false;
             }
             numberStr += c;
         }
     }
 
-    // Procesamos el último número en numberStr si es que hay alguno
+    
     if (!numberStr.empty()) {
         int cake = 0;
-        // Convertimos la cadena en un número entero
+        
         for (char digit : numberStr) {
             cake = cake * 10 + (digit - '0');
         }
@@ -86,7 +86,7 @@ void exercise_3(string s1) {
             cout << "No cake :(" << endl;
         }
     } else if (foundSpace) {
-        // Si encontramos un espacio en blanco al final, imprimimos "No cake :("
+        
         cout << "No cake :(" << endl;
     }
 }
@@ -99,7 +99,7 @@ void exercise_4(int n) {
         return;
     }
 
-    // Verificamos si el número es demasiado grande
+    
     if (n > 14) {
         cout << "El numero es muy grande. Intentelo de nuevo" << endl;
         return;
@@ -111,13 +111,38 @@ void exercise_4(int n) {
         factorial *= i;
     }
 
-    // Mostramos el resultado
+    
     cout << factorial << endl;
 }
 
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+     int day = 1; // Variable para rastrear el día actual del mes
+    // Iteramos sobre las semanas
+    while (day <= k) {
+        // Iteramos sobre los días de la semana
+        for (int i = 1; i <= 7; ++i) {
+            if (day <= k) {
+                // Imprimimos el día si corresponde
+                if (i == 1) {
+                    // Agregamos espacios para alinear correctamente el primer día
+                    for (int j = 1; j < n; ++j) {
+                        cout << "   ";
+                    }
+                }
+                // Imprimimos el número de día con formato
+                cout << (day < 10 ? " " : "") << day;
+                // Añadimos espacios entre los días
+                if (i < 7 && day != k) {
+                    cout << " ";
+                }
+                day++;
+            }
+        }
+        cout << endl;
+    }
+}
 }
 
 int exercise_6(int n) {
