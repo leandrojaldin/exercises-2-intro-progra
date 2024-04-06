@@ -96,13 +96,13 @@ void exercise_4(int n) {
   // TODO: YOUR CODE HERE
       if (n < 0) {
         cout << "El numero es negativo. Intentelo de nuevo" << endl;
-        
+        return;
     }
 
     // Verificamos si el número es demasiado grande
     if (n > 14) {
         cout << "El numero es muy grande. Intentelo de nuevo" << endl;
-        
+        return;
     }
 
     // Calculamos el factorial
