@@ -115,9 +115,7 @@ void exercise_4(int n) {
     cout << factorial << endl;
 }
 
-
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
     int day = 1; // Inicializamos el contador de días
     for (int i = 1; i <= 6; ++i) { // Iteramos sobre las filas
         for (int j = 1; j <= 7; ++j) { // Iteramos sobre las columnas
@@ -145,8 +143,7 @@ void exercise_5(int n, int k) {
             break;
         }
     }
-}
-  
+}  
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
