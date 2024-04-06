@@ -118,7 +118,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-      int rows = (k + n - 2) / 7 + 1;
+    int rows = (k + n - 2) / 7 + 1;
     
     // Imprimimos el calendario
     int day = 1;
@@ -142,7 +142,7 @@ void exercise_5(int n, int k) {
     }
     cout << "\n"; // Agregamos una línea en blanco al final del calendario
 }
-
+}  
 
 
 int exercise_6(int n) {
