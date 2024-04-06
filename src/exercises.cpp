@@ -47,14 +47,14 @@ void exercise_3(string s1) {
                 cake = cake * 10 + (digit - '0');
             }
 
-            if (numberStr.size() > 0 && cake == 1) {
+            if (!numberStr.size() && cake == 1) {
                 cout << "Om-nom-nom :P" << endl;
                 cakeCount++;
 
                 if (cakeCount >= 10) {
                     return; // Salimos del ciclo si se han realizado más de 10 visitas
                 }
-            } else {
+            } else if (!numberStr.size()) { // Agregamos una condición para evitar imprimir "No cake :(" cuando hay solo un espacio
                 cout << "No cake :(" << endl;
                 return; // Salimos del ciclo si no hay más pastel
             }
