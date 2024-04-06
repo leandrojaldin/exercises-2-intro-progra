@@ -117,7 +117,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //HERE YOUR CODE
-   int day = 1; // Inicializamos el día del mes en 1
+    int day = 1; // Inicializamos el día del mes en 1
     
     // Iteramos sobre las filas del calendario
     for (int i = 0; i < 6; ++i) {
