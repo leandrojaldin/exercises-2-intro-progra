@@ -15,20 +15,25 @@ void exercise_1(string s1) {
 }
 
 void exercise_2(string s1) {
-  // TODO: YOUR CODE HERE
-    string word = "";
+  // TODO: YOUR CODE HERe
+  string word = "";
 
     for (int i = 0; i < s1.size(); ++i) {
         if (s1[i] != ' ') {
             word += s1[i];
         } else {
             if (word != "") {
-                cout << "[" << word << "]" << endl;
+                cout << "[" << word << "]" << endl; // Agregamos endl aquí
                 word = "";
             }
         }
     }
+
+    if (word != "") {
+        cout << "[" << word << "]" << endl; // Agregamos endl aquí también
+    }
 }
+
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
