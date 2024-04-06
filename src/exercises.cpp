@@ -118,26 +118,30 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-    int rows = (k + n - 2) / 7 + 1;
+      int rows = (k + n - 2) / 7 + 1;
     
     // Imprimimos el calendario
     int day = 1;
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < 7 && day <= k; ++j) {
             if (i == 0 && j < n - 1) {
-                cout << "   "; // Espacios para los días anteriores al primer día
+                // Espacios para los días anteriores al primer día
+                cout << "   ";
             } else {
-                cout.width(2);
-                cout << day++; // Imprimimos el día actual
+                // Imprimimos el día actual
+                cout << (day < 10 ? " " : "") << day;
+                ++day;
             }
             if (day <= k) {
                 cout << " ";
             }
         }
-        cout << endl;
+        if (i < rows - 1 || day <= k) {
+            cout << endl;
+        }
     }
 }  
-
+}
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
