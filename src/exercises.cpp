@@ -37,22 +37,26 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-int cakeCount = 0;
+    int cakeCount = 0;
 
     string numberStr = "";
     for (char c : s1) {
         if (c == ' ') {
-            int cake = stoi(numberStr);
-            if (cake == 1) {
+            int cake = 0;
+            for (char digit : numberStr) {
+                cake = cake * 10 + (digit - '0');
+            }
+
+            if (numberStr.size() > 0 && cake == 1) {
                 cout << "Om-nom-nom :P" << endl;
                 cakeCount++;
 
                 if (cakeCount >= 10) {
-                    break; // Detenemos el ciclo si se han realizado más de 10 visitas
+                    return; // Salimos del ciclo si se han realizado más de 10 visitas
                 }
             } else {
                 cout << "No cake :(" << endl;
-                break; // Detenemos el ciclo si no hay más pastel
+                return; // Salimos del ciclo si no hay más pastel
             }
             numberStr = ""; // Reiniciamos numberStr para la próxima iteración
         } else {
