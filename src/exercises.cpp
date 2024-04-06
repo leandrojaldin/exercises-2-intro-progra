@@ -118,29 +118,34 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-    int rows = (k + n - 2) / 7 + 1;
-    
-    // Imprimimos el calendario
-    int day = 1;
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < 7 && day <= k; ++j) {
-            if (i == 0 && j < n - 1) {
-                // Espacios para los días anteriores al primer día
+    int day = 1; // Inicializamos el contador de días
+    for (int i = 1; i <= 6; ++i) { // Iteramos sobre las filas
+        for (int j = 1; j <= 7; ++j) { // Iteramos sobre las columnas
+            if (i == 1 && j < n) {
+                // Imprimimos espacios para los días antes del primer día
                 cout << "   ";
             } else {
-                // Imprimimos el día actual
-                cout << (day < 10 ? " " : "") << day;
-                ++day;
+                if (day <= k) {
+                    // Imprimimos el número del día
+                    cout.width(2); // Ancho de campo de 2 caracteres
+                    cout << day;
+                    ++day;
+                } else {
+                    // Imprimimos espacios para los días después del último día
+                    cout << "  ";
+                }
             }
-            if (day <= k) {
+            if (j < 7) {
+                // Imprimimos un espacio adicional entre los números
                 cout << " ";
             }
         }
-        if (i < rows - 1 || day <= k) {
-            cout << " \n"; // Añadir un espacio al final de cada línea, excepto la última
+        cout << endl; // Saltamos a la siguiente línea después de cada fila
+        if (day > k) {
+            // Si ya hemos impreso todos los días, salimos del bucle
+            break;
         }
     }
-    cout << "\n"; // Agregamos una línea en blanco al final del calendario
 }
 
 
