@@ -37,6 +37,18 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
+  
+    string numberStr = "";
+    for (char c : s1) {
+        if (c == ' ') {
+            int cake = stoi(numberStr);
+            if (cake == 1) {
+                cout << "Om-nom-nom :P" << endl;
+                cakeCount++;
+
+                if (cakeCount >= 10) {
+                    break; // Detenemos el ciclo si se han realizado más de 10 visitas
+                }
 }
 
 void exercise_4(int n) {
