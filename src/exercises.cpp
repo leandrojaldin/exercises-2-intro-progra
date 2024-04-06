@@ -117,36 +117,21 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //HERE YOUR CODE
-    int day = 1; // Inicializamos el día del mes en 1
-    
-    // Iteramos sobre las filas del calendario
-    for (int i = 0; i < 6; ++i) {
-        // Iteramos sobre las columnas del calendario
-        for (int j = 0; j < 7; ++j) {
-            // Si estamos en la primera fila y la columna actual es mayor que el día de la semana del primer día del mes,
-            // o si el día actual es mayor que el número de días del mes, imprimimos un espacio en blanco
-            if ((i == 0 && j >= n - 1) || (day > k)) {
-                cout << "   ";
-            } else {
-                // Si no, imprimimos el día actual y aumentamos el contador de días
-                cout << ((day < 10) ? " " : "") << day << " ";
-                day++;
-            }
-            // Si hemos llegado al último día del mes, salimos del bucle
-            if (day > k) break;
-        }
-        // Imprimimos un salto de línea al final de cada fila
-        cout << endl;
-        // Si hemos llegado al último día del mes, salimos del bucle
-        if (day > k) break;
-    }
 }
 
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-  return 0;
+     int sum = 0;
+    
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    
+    return sum;
 }
+
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
