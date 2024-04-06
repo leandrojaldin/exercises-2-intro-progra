@@ -117,7 +117,24 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //HERE YOUR CODE
-}  
+    int day = 1;
+    int start_day = n - 1; // Adjust for 0-based indexing
+    for (int i = 0; i < 6; ++i) { // 6 rows for the calendar
+        for (int j = 0; j < 7; ++j) { // 7 columns for each day of the week
+            if (i == 0 && j < start_day) {
+                cout << "   "; // Print spaces for days before the first day
+            } else {
+                if (day <= k) {
+                    cout << (day < 10 ? " " : "") << day << " "; // Adjust formatting for single-digit numbers
+                    ++day;
+                }
+            }
+        }
+        cout << endl;
+        if (day > k) break; // Stop if all days of the month have been printed
+    }
+}
+
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
