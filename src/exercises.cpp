@@ -142,7 +142,7 @@ void exercise_5(int n, int k) {
     }
     cout << "\n"; // Agregamos una línea en blanco al final del calendario
 }
-}  
+
 
 
 int exercise_6(int n) {
