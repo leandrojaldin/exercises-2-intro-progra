@@ -214,7 +214,7 @@ void exercise_11() {
   // TODO: YOUR CODE HERE
   double Un = 1.0;
   cout << "Uo = 1" << endl;
-  for (int n = 1; n <= 10; ++n) {
+  for (int n = 1; n >= 10; ++n) {
     Un = Un / (n + 1);
     cout << "U" << n << " = " << Un << endl;
   }
