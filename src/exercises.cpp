@@ -184,7 +184,7 @@ void exercise_9(string s) {
                 primera_aparicion = i;
             } else if (segunda_aparicion == -1) {
                 segunda_aparicion = i;
-                break
+                break;
             }
         }
     }
