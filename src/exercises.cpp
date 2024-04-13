@@ -212,13 +212,14 @@ int exercise_10(int a, int b) {
 
 void exercise_11() {
   // TODO: YOUR CODE HERE
-    double Un = 1.0; // Primer término de la secuencia
-    cout << "U0 = " << Un << endl; // Imprimir el primer término
-    for (int n = 1; n <= 10; ++n) {
-        Un /= (n + 1); // Calcular el siguiente término de la secuencia
-        cout << "U" << n << " = " << Un << endl; // Imprimir el siguiente término
-    }
+  double Un = 1.0;
+  cout << "Uo = 1" << endl;
+  for (int n = 1; n <= 10; ++n) {
+    Un = Un / (n + 1);
+    cout << "U" << n << " = " << Un << endl;
+  }
 }
+
 
 
 
