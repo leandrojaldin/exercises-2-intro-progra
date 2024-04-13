@@ -212,14 +212,14 @@ int exercise_10(int a, int b) {
 
 void exercise_11() {
   // TODO: YOUR CODE HERE
-    double un = 1.0; // Inicializamos U0 como 1.0
-    cout << "U0 = " << fixed << setprecision(6) << un << endl; // Imprimimos U0 con precisión decimal
-
+    double Un = 1.0; // Primer término de la secuencia
+    cout << "U0 = " << Un << endl; // Imprimir el primer término
     for (int n = 1; n <= 10; ++n) {
-        un = un / (n + 1); // Calculamos el siguiente término de la secuencia
-        cout << U << n <<  =  << fixed << setprecision(6) << un << endl; // Imprimimos el término calculado
+        Un /= (n + 1); // Calcular el siguiente término de la secuencia
+        cout << "U" << n << " = " << Un << endl; // Imprimir el siguiente término
     }
 }
+
 
 
 void exercise_12() {
