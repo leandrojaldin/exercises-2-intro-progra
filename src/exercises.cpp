@@ -148,7 +148,30 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
+    string clean_string = "";
+    for (char c : s) {
+        if (c != ' ') {
+            clean_string += c;
+        }
+    }
+    
+    // Verificar si la cadena resultante es un palíndromo
+    bool is_palindrome = true;
+    int n = clean_string.length();
+    for (int i = 0; i < n / 2; ++i) {
+        if (clean_string[i] != clean_string[n - i - 1]) {
+            is_palindrome = false;
+            break;
+        }
+    }
+    
+    if (is_palindrome) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
 }
+
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
