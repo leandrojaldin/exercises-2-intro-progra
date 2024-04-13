@@ -217,7 +217,7 @@ void exercise_11() {
 
     for (int n = 1; n <= 10; ++n) {
         un = un / (n + 1); // Calculamos el siguiente término de la secuencia
-        cout << "U" << n <<  =  << fixed << setprecision(6) << un << endl; // Imprimimos el término calculado
+        cout << U << n <<  =  << fixed << setprecision(6) << un << endl; // Imprimimos el término calculado
     }
 }
 
