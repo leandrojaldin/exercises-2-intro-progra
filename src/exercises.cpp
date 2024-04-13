@@ -204,8 +204,8 @@ int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
     while (b != 0) {
         int temp = b;
-        b = b % b;
-        a = temp;
+        b = a % b;
+        a = b;
     }
     return a;
 }
