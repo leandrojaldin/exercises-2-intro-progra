@@ -202,7 +202,7 @@ void exercise_9(string s) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-      while (b != 0) {
+    while (b != 0) {
         int temp = b;
         b = a % b;
         a = temp;
