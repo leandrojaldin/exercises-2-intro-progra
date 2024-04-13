@@ -160,7 +160,7 @@ void exercise_8(string s) {
     int n = clean_string.length();
     for (int i = 0; i < n / 2; ++i) {
         if (clean_string[i] != clean_string[n - i - 1]) {
-            is_palindrome = false;
+            is_palindrome = false 
             break;
         }
     }
