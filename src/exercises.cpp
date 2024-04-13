@@ -178,7 +178,7 @@ void exercise_9(string s) {
     int primera_aparicion = -1;
     int segunda_aparicion = -1;
 
-    for (int i = 0; i < s.size; ++i) {
+    for (int i = 0; i < s.size(); ++i) {
         if (s[i] == 'f') {
             if (primera_aparicion == -1) {
                 primera_aparicion = i;
