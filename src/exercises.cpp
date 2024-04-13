@@ -216,7 +216,7 @@ void exercise_11() {
     cout << "U0 = " << Un << endl; // Imprimir el primer término
     for (int n = 1; n <= 10; ++n) {
         Un /= (n + 1); // Calcular el siguiente término de la secuencia
-        cout << "U" << n <<  =  << Un << endl; // Imprimir el siguiente término
+        cout << U << n <<  =  << Un << endl; // Imprimir el siguiente término
     }
 }
 
