@@ -267,7 +267,19 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+    int numeroBinario = 0;
+    int resto, i = 1;
+
+    while (decimal != 0) {
+        resto = decimal % 2;
+        decimal /= 2;
+        numeroBinario += rest * i;
+        i *= 10;
+    }
+
+    cout << "El número binario es: " << numeroBinario << endl;
 }
+
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
