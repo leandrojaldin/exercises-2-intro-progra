@@ -290,7 +290,7 @@ void exercise_16(int dividendo, int divisor) {
         cout << "Error: División por cero" << endl;
         return;
     }
-    
+
     // Inicializar variables para el cociente y el residuo
     int cociente = 0;
     int residuo = dividendo;
@@ -306,6 +306,7 @@ void exercise_16(int dividendo, int divisor) {
     // Mostrar el resultado en la salida estándar
     cout << cociente << " " << residuo << endl;
 }
+
 
 
 
