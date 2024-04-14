@@ -292,6 +292,19 @@ void exercise_15(int decimal) {
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
+    int quotient = 0;
+    int remainder = dividend;
+
+    // Mientras el residuo sea mayor o igual que el divisor
+    while (remainder >= divider) {
+        // Restar el divisor del residuo y aumentar el cociente en 1
+        remainder -= divider;
+        quotient++;
+    }
+
+    // Mostrar el resultado
+    cout << quotient << " " << remainder << endl;
+}
 }
 
 void exercise_17(int n) {
