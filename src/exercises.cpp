@@ -237,8 +237,9 @@ void exercise_12() {
         cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
     }
 
-    cout << "\nvalor aproximado de e" << e_approximation << endl;
+    cout << "\nvalor de e " << e_approximation << endl;
 }
+
 
 
 long exercise_13(int n, int k) {
