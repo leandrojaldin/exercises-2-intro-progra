@@ -232,7 +232,7 @@ void exercise_12() {
     for(int n = 1; n <= 10; ++n) {
         U = U / n;
         V += U;
-        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
+        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V + U<< endl;
     } 
 }
 
