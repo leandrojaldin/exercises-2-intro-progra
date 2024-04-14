@@ -241,11 +241,11 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-    long sum = 1;
+    long sum = 0;
     for (int i = 1; i <= n; ++i) {
         sum += pow(i, k);
     }
-    return sum;
+    return 0;
 }
 
 
