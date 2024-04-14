@@ -277,7 +277,7 @@ void exercise_15(int decimal) {
         i *= 10;
     }
 
-    cout << "El número binario es: " << numeroBinario << endl;
+    cout << "El numero binario es: " << numeroBinario << endl;
 }
 
 
