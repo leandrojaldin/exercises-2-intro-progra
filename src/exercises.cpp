@@ -245,7 +245,7 @@ long exercise_13(int n, int k) {
     for (int i = 1; i <= n; ++i) {
         sum += pow(i, k);
     }
-    return 0;
+    return sum;
 }
 
 
