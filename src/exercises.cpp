@@ -216,8 +216,8 @@ void exercise_11() {
   cout << "U0 = 1" << endl;
   for (int n = 1; n <= 10; ++n) {
     Un = Un / (n + 1);
+    cout << "U" << n << " = " << Un << endl;
   }
-  cout << "U" << n << " = " << Un << endl;
 }
 
 
