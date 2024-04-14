@@ -225,7 +225,21 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+    double U = 1.0;
+    double V = 1.0;
+    double e_approximation = 1.0; // Inicialmente 1.0, ya que e^0 = 1.
+
+    cout << "U1 = " << U << " V1 = " << V << endl;
+    for(int n = 1; n <= 10; ++n) {
+        U = U / n;
+        V += U;
+        e_approximation += U; // Aproximación de 'e'
+        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
+    }
+
+    cout << "\nConvergencia de Vm a e ≈ " << e_approximation << endl;
 }
+
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
