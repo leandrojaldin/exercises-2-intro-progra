@@ -237,7 +237,7 @@ void exercise_12() {
         Vn += Un; // Calculamos Vn sumando Un a Vn
         
         cout << "U" << n+1 << " = " << Un << " V" << n+1 << " = " << Vn << endl;
-    }
+    } 
 }
 
 
