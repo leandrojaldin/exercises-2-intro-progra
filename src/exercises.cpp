@@ -230,10 +230,10 @@ void exercise_12() {
 
     cout << "U1 = " << U << " V1 = " << V << endl;
     for(int n = 1; n <= 10; ++n) {
-        U = U / n;
-        V += U;
-        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V + U<< endl;
-    } 
+    U = U / n;
+    V += U; // Aquí se actualiza correctamente V sumando solo U
+    cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
+}
 }
 
 
