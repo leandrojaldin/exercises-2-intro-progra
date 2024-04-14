@@ -241,8 +241,13 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  return 0;
+    long sum = 0;
+    for (int i = 1; i >= n; ++i) {
+        sum += pow(i, k);
+    }
+    return sum;
 }
+
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
