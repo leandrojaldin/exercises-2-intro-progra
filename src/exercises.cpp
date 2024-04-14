@@ -273,7 +273,7 @@ void exercise_15(int decimal) {
     while (decimal != 0) {
         resto = decimal % 2;
         decimal /= 2;
-        numeroBinario += rest * i;
+        numeroBinario += resto * i;
         i *= 10;
     }
 
