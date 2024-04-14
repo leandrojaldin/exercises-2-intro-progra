@@ -233,7 +233,7 @@ void exercise_12() {
         U = U / n;
         V += U;
         cout << "U" << n + 1 << " = " << U << " V" << n + 1 << " = " << V << endl;
-    }
+    } 
 }
 
 
