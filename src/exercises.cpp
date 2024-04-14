@@ -291,9 +291,22 @@ void exercise_15(int decimal) {
 
 
 
-void exercise_16(int divident, int divider) {
+void exercise_16(int dividendo, int divisor) {
   // TODO: YOUR CODE HERE
+    int cociente = 0;
+    int residuo = dividendo;
+
+    // Mientras el residuo sea mayor o igual que el divisor
+    while (residuo >= divisor) {
+        // Restamos el divisor del residuo y aumentamos el cociente en 1
+        residuo -= divisor;
+        cociente++;
+    }
+
+    // Imprimimos el cociente y el residuo
+    cout << cociente << " " << residuo << endl;
 }
+
 
 
 void exercise_17(int n) {
