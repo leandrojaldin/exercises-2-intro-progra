@@ -219,7 +219,7 @@ void exercise_11() {
         Un /= n + 1; // Calculamos Un+1 usando la fórmula
         cout << "U" << n+1 << " = " << Un << endl;
     }
-}
+} 
 
 
 
