@@ -227,17 +227,19 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+    cout << "U1 = 1 V1 = 1" << endl;
+    
     double Un = 1.0;
-    double Vn = 1.0;
-    cout << "U1 = " << Un << " V1 = " << Vn << endl;
-
-    for(int n = 2; n <= 10; ++n) {
-        Un /= n;
-        Vn += Un;
-        cout << "U" << n << " = " << Un << " V" << n << " = " << Vn << endl;
+    double Vn = 1.0; // Inicializamos V1 como 1
+    
+    for (int n = 1; n <= 10; ++n) {
+        Un /= n; // Calculamos Un+1 usando la fórmula
+        Vn += Un; // Calculamos Vn sumando Un a Vn
+        
+        cout << "U" << n+1 << " = " << Un << " V" << n+1 << " = " << Vn << endl;
     }
-
 }
+
 
 
 
