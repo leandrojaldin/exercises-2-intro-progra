@@ -267,7 +267,35 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+    int binary[32];
+    
+    // Variable para llevar la cuenta del índice en el arreglo
+    int index = 0;
+
+    // Caso especial si el número decimal es 0
+    if (decimal == 0) {
+        cout << "El número binario es: 0" << endl;
+        return;
+    }
+
+    // Mientras el número decimal sea mayor que 0
+    while (decimal > 0) {
+        // Se obtiene el residuo de la división por 2
+        binary[index] = decimal % 2;
+        // Se divide el número decimal por 2
+        decimal = decimal / 2;
+        // Se incrementa el índice para pasar al siguiente bit
+        index++;
+    }
+
+    // Se imprime el número binario a partir del último bit generado
+    cout << "El número binario es: ";
+    for (int i = index - 1; i >= 0; i--) {
+        cout << binary[i];
+    }
+    cout << endl;
 }
+
 
 
 void exercise_16(int divident, int divider) {
