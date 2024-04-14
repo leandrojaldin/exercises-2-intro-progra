@@ -267,7 +267,27 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+      // Variable para almacenar el número binario
+    int binario = 0;
+    // Variable para la posición del dígito binario
+    int posicion = 1;
+
+    // Iteramos hasta que el decimal sea mayor que 0
+    while (decimal > 0) {
+        // Obtenemos el residuo de dividir el decimal por 2
+        int residuo = decimal % 2;
+        // Multiplicamos el residuo por la posición y lo sumamos al número binario
+        binario += residuo * posicion;
+        // Dividimos el decimal por 2
+        decimal /= 2;
+        // Multiplicamos la posición por 10 para avanzar al siguiente dígito binario
+        posicion *= 10;
+    }
+
+    // Imprimimos el número binario
+    cout << "El número binario es: " << binario << endl;
 }
+
 
 
 
