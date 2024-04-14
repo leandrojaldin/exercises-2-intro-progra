@@ -267,17 +267,27 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-    int numeroBinario = 0;
-    int resto, i = 1;
-
-    while (decimal != 0) {
-        resto = decimal % 2;
-        decimal /= 2;
-        numeroBinario += resto * i;
-        i *= 10;
+    // Caso especial para el número 0
+    if (decimal == 0) {
+        cout << "El número binario es: 0" << endl;
+        return;
     }
 
-    cout << "El numero binario es: " << numeroBinario << endl;
+    int binary[32]; // Arreglo para almacenar el número binario, tamaño máximo de 32 bits
+    int index = 0; // Índice para almacenar el bit en el arreglo
+
+    // Convertir decimal a binario
+    while (decimal > 0) {
+        binary[index++] = decimal % 2; // Guardar el residuo en el arreglo
+        decimal /= 2; // Actualizar el valor de decimal
+    }
+
+    // Mostrar el número binario en orden inverso
+    cout << "El número binario es: ";
+    for (int i = index - 1; i >= 0; --i) {
+        cout << binary[i];
+    }
+    cout << endl;
 }
 
 
