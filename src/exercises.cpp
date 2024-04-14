@@ -251,7 +251,17 @@ long exercise_13(int n, int k) {
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
-  return "";
+    string original = to_string(n);
+    int left = 0;
+    int right = original.length() - 1;
+    while (left < right) {
+        if (original[left] != original[right]) {
+            return "No es palindrome";
+        }
+        left++;
+        right--;
+    }
+    return "Es palindrome";
 }
 
 void exercise_15(int decimal) {
