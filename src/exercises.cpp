@@ -234,7 +234,7 @@ void exercise_12() {
         U = U / n;
         V += U;
         e_approximation += U; // Aproximación de 'e'
-        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << endl;
+        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
     }
 
     cout << "\nvalor aproximado de e " << e_approximation << endl;
