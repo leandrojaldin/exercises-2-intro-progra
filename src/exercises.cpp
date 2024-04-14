@@ -234,11 +234,12 @@ void exercise_12() {
     
     for (int n = 1; n <= 10; ++n) {
         Un /= n + 1; // Calculamos Un+1 usando la fórmula
-        Vn += Un; // Sumamos Un a Vn para obtener la suma acumulativa
+        Vn += Un; // Calculamos Vn sumando Un a Vn
         
         cout << "U" << n+1 << " = " << Un << " V" << n+1 << " = " << Vn << endl;
     }
 }
+
 
 
 
