@@ -232,8 +232,8 @@ void exercise_12() {
     double Un = 1.0;
     double Vn = 1.0; // Inicializamos V1 como 1
     
-    for (int n = 1; n <= 10; ++n) {
-        Un /= n; // Calculamos Un+1 usando la fórmula
+    for (int n = 1; n <= 9; ++n) {
+        Un /= n + 1; // Calculamos Un+1 usando la fórmula
         Vn += Un; // Calculamos Vn sumando Un a Vn
         
         cout << "U" << n+1 << " = " << Un << " V" << n+1 << " = " << Vn << endl;
