@@ -212,12 +212,13 @@ int exercise_10(int a, int b) {
 
 void exercise_11() {
   // TODO: YOUR CODE HERE
-  double Un = 1.0;
-  cout << "U0 = 1" << endl;
-  for (int n = 1; n <= 10; ++n) {
-    Un = Un / (n + 1);
-    cout << "U" << n << " = " << Un << endl;
-  }
+    double Un = 1.0; // Inicializamos U0 como 1
+    cout << "U0 = " << Un << endl;
+    
+    for (int n = 1; n <= 10; ++n) {
+        Un /= n + 1; // Calculamos Un+1 usando la fórmula
+        cout << "U" << n << " = " << Un << endl;
+    }
 }
 
 
