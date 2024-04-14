@@ -217,7 +217,7 @@ void exercise_11() {
   for (int n = 1; n <= 10; ++n) {
     Un = Un / (n + 1);
   }
-  cout << "U" << n << " = " << endl;
+  cout << "U" << n << " = " << Un << endl;
 }
 
 
