@@ -267,26 +267,6 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-    if (decimal == 0) {
-        cout << "El número binario es: 0\n";
-        return;
-    }
-
-    int binary[32]; // Arreglo para almacenar el número binario, tamaño máximo de 32 bits
-    int index = 0; // Índice para almacenar el bit en el arreglo
-
-    // Convertir decimal a binario
-    while (decimal > 0) {
-        binary[index++] = decimal % 2; // Guardar el residuo en el arreglo
-        decimal /= 2; // Actualizar el valor de decimal
-    }
-
-    // Mostrar el número binario en orden inverso
-    cout << "El número binario es: ";
-    for (int i = index - 1; i >= 0; --i) {
-        cout << binary[i];
-    }
-    cout << endl;
 }
 
 
