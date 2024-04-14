@@ -251,17 +251,18 @@ long exercise_13(int n, int k) {
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
-    string original = to_string(n);
-    int left = 0;
-    int right = original.length() - 1;
-    while (left < right) {
-        if (original[left] != original[right]) {
-            return "No es palindrome";
-        }
-        left++;
-        right--;
+    int original = n;
+    int reversed = 0;
+    while (n > 0) {
+        int remainder = n % 10;
+        reversed = reversed * 10 + remainder;
+        n /= 10;
     }
-    return "Es palindrome";
+    if (original == reversed) {
+        return "Es palindrome";
+    } else {
+        return "No es palindrome";
+    }
 }
 
 void exercise_15(int decimal) {
