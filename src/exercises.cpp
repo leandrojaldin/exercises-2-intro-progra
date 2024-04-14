@@ -267,7 +267,6 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-    // Caso especial para el número 0
     if (decimal == 0) {
         cout << "El número binario es: 0" << endl;
         return;
