@@ -225,15 +225,14 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
-    double sum = 0;
-    double term = 1;
-    double Vn = 0;
-    
-    for (int n = 1; n <= 10; ++n) {
-        sum += term;
-        Vn += sum;
-        cout << "U" << n << " = " << term << " V" << n << " = " << Vn << endl;
-        term /= n;
+    double Un = 1.0;
+    double Vn = 1.0;
+    cout << "U1 = " << Un << " V1 = " << Vn << endl;
+
+    for(int n = 2; n <= 10; ++n) {
+        Un /= n;
+        Vn += Un;
+        cout << "U" << n << " = " << Un << " V" << n << " = " << Vn << endl;
     }
 
 }
