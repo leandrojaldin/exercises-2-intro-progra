@@ -229,11 +229,11 @@ void exercise_12() {
     double V = 1.0;
 
     cout << "U1 = " << U << " V1 = " << V << endl;
-    for(int n = 1; n <= 10; ++n) {
+    for (int n = 1; n <= 10; ++n) {
         U = U / n;
-        cout << "U" << n+1 << " = " << U << " V" << n+1 << " = " << V << endl;
+        V += U;
+        cout << "U" << n + 1 << " = " << U << " V" << n + 1 << " = " << V << endl;
     }
-
 }
 
 
