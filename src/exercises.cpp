@@ -281,22 +281,30 @@ void exercise_16(int dividendo, int divisor) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
-    int encontrado = 0;
-    int num = 2;
-    while (encontrado < n) {
-        if (es_primo(num)) {
-            cout << num;
-            encontrado++;
-            if (encontrado < n) {
-                cout << " ";
-            }
-        }
-        ++num;
-    }
-    cout << endl;
 }
-
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
+    if (debut <= 0 || fin <= debut) {
+        cout << "El numero debe de ser positivo y mayor a cero, y el numero final no debe de ser menor o igual al inicial." << endl;
+        return;
+    }
+
+    for (int i = debut; i <= fin; ++i) {
+        int num = i;
+        int count = 0;
+        
+        while (num != 0) {
+            if (num % 3 == 0) {
+                num += 4;
+            } else if (num % 4 == 0) {
+                num /= 2;
+            } else {
+                num -= 1;
+            }
+            ++count;
+        }
+        
+        cout << i << " -> " << count << endl;
+    }
 }
