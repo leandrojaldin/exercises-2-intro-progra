@@ -305,7 +305,7 @@ void exercise_16(int dividendo, int divisor) {
 
     // Imprimimos el cociente y el residuo
     cout << cociente << " " << residuo << endl;
-}
+}  
 
 
 
