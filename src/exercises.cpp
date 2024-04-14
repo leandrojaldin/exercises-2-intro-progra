@@ -305,7 +305,7 @@ void exercise_16(int divident, int divider) {
     // Mostrar el resultado
     cout << quotient << " " << remainder << endl;
 }
-}
+
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
