@@ -241,9 +241,9 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-    long sum = 0;
+    long sum = 1;
     for (int i = 1; i <= n; ++i) {
-        sum += (i, k);
+        sum += pow(i, k);
     }
     return sum;
 }
