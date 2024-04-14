@@ -281,7 +281,21 @@ void exercise_16(int dividendo, int divisor) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+    int encontrado = 0;
+    int num = 2;
+    while (encontrado < n) {
+        if (es_primo(num)) {
+            cout << num;
+            encontrado++;
+            if (encontrado < n) {
+                cout << " ";
+            }
+        }
+        ++num;
+    }
+    cout << endl;
 }
+
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
