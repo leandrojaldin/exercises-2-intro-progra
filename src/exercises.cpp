@@ -227,17 +227,6 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
-    cout << "U1 = 1 V1 = 1" << endl;
-    
-    double Un = 1.0;
-    double Vn = 1.0; // Inicializamos V1 como 1
-    
-    for (int n = 1; n <= 10; ++n) {
-        Un /= n + 1; // Calculamos Un+1 usando la fórmula
-        Vn += Un; // Calculamos Vn sumando Un a Vn
-        
-        cout << "U" << n+1 << " = " << Un << " V" << n+1 << " = " << Vn << endl;
-    }
 }
 
 
@@ -273,8 +262,24 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+    // Caso base: si el número es 0, su representación binaria es 0
+    if (decimal == 0) {
+        cout << "0" << endl;
+        return;
+    }
 
+    string binary = ""; // Inicializamos una cadena vacía para almacenar el número binario
+    
+    while (decimal > 0) {
+        int remainder = decimal % 2; // Obtenemos el resto de dividir por 2
+        char digit = remainder + '0'; // Convertimos el dígito en un carácter
+        binary = digit + binary; // Agregamos el carácter al inicio de la cadena binaria
+        decimal /= 2; // Dividimos el número decimal por 2 para continuar con la conversión
+    }
+
+    cout << binary << endl; // Imprimimos el número binario resultante
 }
+
 
 
 
