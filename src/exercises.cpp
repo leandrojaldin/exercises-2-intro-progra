@@ -155,14 +155,17 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
-    double sum = 0.0;
-    double term = 1.0;
+    double suma = 0.0;
+    int signo = 1; // Comienza con un término positivo
+
     for (int i = 1; i <= n; ++i) {
-        sum += term;
-        term /= i;
+        suma += signo * (1.0 / i); // Agrega el término actual a la suma
+        signo *= -1; // Cambia el signo para el siguiente término
     }
-    cout << sum << endl;
+
+    return suma;
 }
+
 
 
 
