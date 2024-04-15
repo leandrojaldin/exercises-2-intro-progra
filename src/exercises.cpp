@@ -122,12 +122,13 @@ void exercise_5(int n, int k) {
     }
 
     // Imprimir los días del mes
+    int day = 1;
     for (int i = 1; i <= k; ++i) {
         // Imprimir cada día con dos caracteres y un espacio adicional si es menor que 10
-        if (i < 10) {
+        if (day < 10) {
             cout << " ";
         }
-        cout << i << " ";
+        cout << day++ << " ";
 
         // Saltar a una nueva línea después de cada séptimo día (domingo)
         if ((i + n - 1) % 7 == 0 || i == k) {
@@ -135,6 +136,7 @@ void exercise_5(int n, int k) {
         }
     }
 }
+
 
 
 
