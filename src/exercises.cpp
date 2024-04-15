@@ -142,14 +142,7 @@ void exercise_5(int n, int k) {
             i = 1;
         }
     }
-    
-    // Si el último día impreso no cae en domingo, imprime un salto de línea
-    if (i != 1) {
-        cout << endl;
-    }
 }
-
-
 
 
 
