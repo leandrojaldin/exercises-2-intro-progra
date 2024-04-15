@@ -117,7 +117,25 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //HERE YOUR CODE
+    for (int i = 1; i < n; ++i) {
+        cout << "   ";
+    }
+
+    // Imprimir los días del mes
+    for (int i = 1; i <= k; ++i) {
+        // Imprimir cada día con dos caracteres y un espacio adicional si es menor que 10
+        if (i < 10) {
+            cout << " ";
+        }
+        cout << i << " ";
+
+        // Saltar a una nueva línea después de cada séptimo día (domingo)
+        if ((i + n - 1) % 7 == 0 || i == k) {
+            cout << endl;
+        }
+    }
 }
+
 
 
 int exercise_6(int n) {
