@@ -313,7 +313,30 @@ void exercise_16(int dividendo, int divisor) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+    if (num <= 1) {
+        return false;
+    }
+    for (int i = 2; i * i <= num; ++i) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
 }
+
+void exercise_17(int n) {
+    int contador = 0;
+    int num = 2;
+    while (contador < n) {
+        if (esPrimo(num)) {
+            cout << num << " ";
+            ++contador;
+        }
+        ++num;
+    }
+    cout << endl;
+}
+
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
