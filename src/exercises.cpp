@@ -291,19 +291,19 @@ void exercise_16(int dividendo, int divisor) {
         return;
     }
 
-    // Inicializar variables para el cociente y el residuo
+    // Inicializar el cociente y el residuo
     int cociente = 0;
     int residuo = dividendo;
 
-    // Mientras el residuo sea mayor o igual al divisor
+    // Mientras el residuo sea mayor o igual que el divisor
     while (residuo >= divisor) {
-        // Restar el divisor del residuo hasta que sea menor que éste
+        // Restar el divisor del residuo hasta que sea menor que el divisor
         residuo -= divisor;
-        // Incrementar el cociente en 1
+        // Incrementar el cociente en 1 en cada iteración
         cociente++;
     }
 
-    // Mostrar el resultado en la salida estándar
+    // Imprimir el cociente y el residuo
     cout << cociente << " " << residuo << endl;
 }
 
@@ -311,32 +311,10 @@ void exercise_16(int dividendo, int divisor) {
 
 
 
+
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
-    if (num <= 1) {
-        return false;
-    }
-    for (int i = 2; i * i <= num; ++i) {
-        if (num % i == 0) {
-            return false;
-        }
-    }
-    return true;
 }
-
-void exercise_17(int n) {
-    int contador = 0;
-    int num = 2;
-    while (contador < n) {
-        if (esPrimo(num)) {
-            cout << num << " ";
-            ++contador;
-        }
-        ++num;
-    }
-    cout << endl;
-}
-
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
