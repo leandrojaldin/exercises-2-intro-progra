@@ -117,25 +117,38 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //HERE YOUR CODE
-    for (int i = 1; i < n; ++i) {
-        cout << "   ";
-    }
-
-    // Imprimir los días del mes
-    int day = 1;
-    for (int i = 1; i <= k; ++i) {
-        // Imprimir cada día con dos caracteres y un espacio adicional si es menor que 10
-        if (day < 10) {
-            cout << " ";
+    int day = 1; // Inicializa el primer día del mes
+    int i = 1; // Inicializa el índice para controlar la impresión de los días
+    
+    // Imprime el calendario
+    while (day <= k) {
+        // Imprime espacios en blanco para los días antes del primer día
+        if (i < n) {
+            cout << "   ";
+            i++;
+        } else {
+            // Imprime los días del mes
+            if (day < 10) {
+                cout << " ";
+            }
+            cout << day << " ";
+            i++;
+            day++;
         }
-        cout << day++ << " ";
-
-        // Saltar a una nueva línea después de cada séptimo día (domingo)
-        if ((i + n - 1) % 7 == 0 || i == k) {
+        
+        // Si es el séptimo día, imprime un salto de línea
+        if (i > 7) {
             cout << endl;
+            i = 1;
         }
+    }
+    
+    // Si el último día impreso no cae en domingo, imprime un salto de línea
+    if (i != 1) {
+        cout << endl;
     }
 }
+
 
 
 
@@ -155,15 +168,7 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
-    double suma = 0.0;
-    int signo = 1; // Comienza con un término positivo
 
-    for (int i = 1; i <= n; ++i) {
-        suma += signo * (1.0 / i); // Agrega el término actual a la suma
-        signo *= -1; // Cambia el signo para el siguiente término
-    }
-
-    return suma;
 }
 
 
